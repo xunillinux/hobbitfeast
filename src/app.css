@@ -1,3 +1,29 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'MiddleEarth', sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'MiddleEarth';
+	src: url('/fonts/Middleearth-ao6m.ttf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'MiddleEarthBold';
+  src: url('/fonts/Middleearth-ao6m.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
