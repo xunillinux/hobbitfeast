@@ -34,18 +34,18 @@
     ];
 </script>
 
-<div class="min-h-screen flex flex-col items-center py-8 bg-cover bg-center" style="background-image: url('/images/background.webp');">
-    <div class="relative w-11/12 max-w-xl flex flex-col items-center p-6 shadow-lg border-4 border-yellow-900 rounded-lg" style="background: linear-gradient(180deg, #f5e1b8 0%, #e3c99f 100%); padding: 2rem; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 12px; border: 3px solid #8B5E3B;">
-        <h1 class="flex items-center justify-center text-3xl font-bold text-brown-900 mb-6 font">
+<div class="min-h-screen flex flex-col items-center py-8 bg-cover bg-center text-center" style="background-image: url('/images/background.webp');">
+    <div class="relative w-11/12 max-w-xl flex flex-col items-center p-6 shadow-lg border-4 border-yellow-900 rounded-lg text-center" style="background: linear-gradient(180deg, #f5e1b8 0%, #e3c99f 100%); padding: 2rem; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 12px; border: 3px solid #8B5E3B;">
+        <h1 class="flex items-center justify-center text-3xl font-bold text-brown-900 mb-6">
             <img src="/images/favicon.webp" alt="Hobbit Logo" class="w-12 h-12 rounded-full mr-4" />
             Hobbit Feast
         </h1>
         {#each menu as meal}
-            <div class="border-b-2 border-gray-600 pb-4 mb-4 w-full last:border-none">
-                <h2 class="text-2xl font-semibold text-brown-800 mb-2 font">{meal.title}</h2>
-                <ul class="list-none p-0 text-brown-700 font">
+            <div class="border-b-1 border-gray-600 pb-4 mb-4 w-full last:border-none text-center">
+                <h2 class="text-2xl font-semibold text-brown-800 mb-2">{meal.title}</h2>
+                <ul class="list-none p-0 text-brown-700">
                     {#each meal.items as item}
-                        <li class="text-lg py-1">{item}</li>
+                        <li class="text-md py-1">{item}</li>
                     {/each}
                 </ul>
             </div>
